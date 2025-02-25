@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "KVLink"
+version = "0.1.0"
+description = "KVLink project"
+authors = ["KVLink Dev"]
+license = "MIT"
+readme = "README.md"
+packages = [
+    { include = "src" },
+]
+
+[tool.black]
+line-length = 100
+target-version = ['py38']
+
+[tool.isort]
+profile = "black"
+line_length = 100
+
+[tool.ruff]
+# Define the Python version for which you are targeting
+target-version = "py39"  # Python 3.9
+
+# Specify which error codes to ignore
+ignore = ["E501"]  # Example: ignore line length
+
+# Maximum allowed line length (optional)
+line-length = 100
+
+# Enable autofix options
+fix = true
+
+# Add or exclude certain rules, you can also define custom rules
+select = ["E", "F", "W", "I", "F401", "F821"]  # Example for selecting error codes
+
+# Exclude certain files or directories from linting
+exclude = ["build", "dist"]
