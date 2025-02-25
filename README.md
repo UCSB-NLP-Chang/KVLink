@@ -283,3 +283,12 @@ Our training script is mainly based on torchtitan and torchtune:
   year = {2024}
 }
 ```
+
+## Citation
+@article{yang2025kvlink,
+  title={KVLink: Accelerating Large Language Models via Efficient KV Cache Reuse},
+  author={Jingbo Yang and Bairu Hou and Wei Wei and Yujia Bao and Shiyu Chang},
+  journal={arXiv preprint arXiv:2502.16002},
+  year={2025}
+}
+
