@@ -220,7 +220,7 @@ class SumAttentionPreprocessor():
                     self.assistant_start_token_ids + all_conversation_texts_ids[i]
                 )
                 if len(labels) + len(assist_msg_input_ids) > self.max_len - 1:
-                    assist_msg_input_ids = input_ids[:self.max_len - 1 - len(labels)]
+                    assist_msg_input_ids = assist_msg_input_ids[:self.max_len - 1 - len(labels)]
 
                 assist_msg_input_ids += [self.eot_token_id]
                 labels.extend(assist_msg_input_ids)
